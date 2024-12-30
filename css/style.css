@@ -16,6 +16,10 @@
   font-family: "poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "poppins" sans-serif;
   background-color: var(--bg);
@@ -274,48 +278,56 @@ body {
 /* About Section */
 .about {
   padding: 6rem 7% 1.4rem;
-  color: #060270;
 }
 
-.about h2 {
+.about .atitle {
+  color: #000;
+  font-size: 1.5rem;
   text-align: center;
-  font-size: 2.6rem;
-  margin-bottom: 3rem;
 }
 
-.about h2 span {
-  color: var(--primary);
+.about .atitle span {
+  color: #ff4343;
 }
 
-.about .row {
+.aimg {
   display: flex;
-}
-
-.about .row .about-img {
-  flex: 1 1 45rem;
-}
-
-.about .row .about-img img {
+  justify-content: center;
   width: 100%;
+  padding: 2rem 1rem;
 }
 
-.about .row .content {
-  flex: 1 1 35rem;
-  padding: 0 1rem;
+.aimg img {
+  width: 50%;
+  align-items: center;
+  background-color: #ff3a3a;
 }
 
-.about .row .content h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+.about .acontent {
+  text-align: justify;
+  color: #000;
+  list-style: none;
 }
 
-.about .row .content p {
-  margin-bottom: 0.8rem;
-  font-size: 1.3rem;
-  font-weight: 300;
-  line-height: 1.6;
+.apengantar p {
+  padding-bottom: 2rem;
 }
 
+.apengantar ul {
+  list-style: disc;
+}
+
+.apengantar li {
+  padding: 0.3rem;
+}
+
+.agkiibengkulu h4 {
+  padding-top: 2rem;
+}
+
+.agkiibengkulu li {
+  padding: 0.3rem;
+}
 /* Struktur Organisasi Section */
 .so {
   padding: 6rem 7% 1.4rem;
