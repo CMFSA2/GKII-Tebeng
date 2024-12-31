@@ -311,14 +311,20 @@ body {
 
 .apengantar p {
   padding-bottom: 2rem;
+  text-indent: 50px;
 }
 
 .apengantar ul {
-  list-style: disc;
+  margin-left: 3rem;
 }
 
 .apengantar li {
   padding: 0.3rem;
+  padding-left: 1rem;
+}
+
+.agkiibengkulu ul {
+  margin-left: 3rem;
 }
 
 .agkiibengkulu h4 {
