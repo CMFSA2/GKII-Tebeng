@@ -22,7 +22,7 @@ html {
 
 body {
   font-family: "poppins" sans-serif;
-  background-color: var(--bg);
+  background-color: #fffeeb;
   color: #fff;
   min-height: 2000px;
 }
@@ -233,11 +233,7 @@ body {
   width: 100%;
   height: 20%;
   bottom: 0;
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 8%,
-    rgba(255, 255, 255, 0) 50%
-  );
+  background: linear-gradient(0deg, #fffeeb 8%, rgba(255, 255, 255, 0) 50%);
 }
 
 .hero .content {
@@ -300,13 +296,13 @@ body {
 .aimg img {
   width: 50%;
   align-items: center;
-  background-color: #ff3a3a;
 }
 
 .about .acontent {
   text-align: justify;
   color: #000;
   list-style: none;
+  font-size: 1.15rem;
 }
 
 .apengantar p {
@@ -340,15 +336,35 @@ body {
   color: #060270;
 }
 
+.so .so-gs {
+  background-color: #fffaaf;
+  height: 475px;
+  border-radius: 30px;
+}
+
+.so .so-km {
+  background-color: #ffb9b9;
+  height: 975px;
+  border-radius: 30px;
+}
+
+.so .so-mpj {
+  background-color: #cafdff;
+  height: 1375px;
+  border-radius: 30px;
+}
+
 .so .soimg {
   display: flex;
   justify-content: center;
+  padding-bottom: 3rem;
 }
 
 .so .soimg img {
   max-width: 90%;
   align-items: center;
 }
+
 .so h2 {
   text-align: center;
   font-size: 2.6rem;
@@ -370,6 +386,21 @@ body {
 .so .rowgs .so-img img {
   width: 70%;
   margin-left: 8rem;
+  padding-right: 1rem;
+}
+
+.so .title h1 {
+  text-align: left;
+  font-size: 2rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.so .title h3 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
 }
 
 .so .rowgs .content {
@@ -377,16 +408,13 @@ body {
   padding: 0 1rem;
 }
 
-.so .rowgs .content h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
 .so .rowgs .content p {
+  max-width: 1000px;
   margin-bottom: 0.8rem;
   font-size: 1.3rem;
   font-weight: 300;
   line-height: 1.6;
+  text-align: justify;
 }
 
 /* Media Queries */
@@ -439,8 +467,30 @@ body {
   }
 }
 
-.about .rowgs {
+.so {
+  height: 550px;
+}
+
+.so .rowgs {
   flex-wrap: wrap;
+}
+
+.so .row .so-img img {
+  height: 24rem;
+  object-fit: cover;
+}
+
+.so .rowgs .content {
+  padding: 1;
+}
+
+.so .rowgs h3 {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.so .rowgs .content p {
+  font-size: 1.5rem;
 }
 
 /* Mobile Phone */
