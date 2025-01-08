@@ -334,9 +334,6 @@ body {
 .so {
   padding: 6rem 7% 1.4rem;
   color: #060270;
-  min-height: 100vh;
-  display: contents;
-  position: relative;
 }
 
 .so .so-gs {
@@ -434,7 +431,7 @@ body {
 /* Media Queries */
 
 /* Laptop */
-@media (max-width: 1440px) {
+@media (max-width: 1366px) {
   html {
     font-size: 75%;
   }
@@ -475,6 +472,9 @@ body {
 
   .so {
     height: 550px;
+    min-height: 100vh;
+    display: contents;
+    position: relative;
   }
 
   .so .rowgs {
@@ -537,6 +537,12 @@ body {
     font-size: 60%;
   }
 
+  .so {
+    min-height: 100vh;
+    display: contents;
+    position: relative;
+  }
+
   .so .so-gs {
     height: 325px;
   }
@@ -560,6 +566,12 @@ body {
     font-size: 50%;
   }
 
+  .so {
+    min-height: 100vh;
+    display: contents;
+    position: relative;
+  }
+
   .apengantar p {
     text-indent: 20px;
   }
@@ -578,5 +590,38 @@ body {
 
   .so .so-apmj {
     height: 2200px;
+  }
+}
+
+/* Mobile Phone Fold Etc. */
+@media (max-width: 344px) {
+  html {
+    font-size: 50%;
+  }
+
+  .so {
+    min-height: 100vh;
+    display: contents;
+    position: relative;
+  }
+
+  .apengantar p {
+    text-indent: 20px;
+  }
+
+  .so .so-gs {
+    height: 575px;
+  }
+
+  .so .so-km {
+    height: 1175px;
+  }
+
+  .so .so-mpj {
+    height: 1825px;
+  }
+
+  .so .so-apmj {
+    height: 2350px;
   }
 }
