@@ -430,7 +430,7 @@ body {
 
 /* Jadwal Pelayanan & Warta Jemaat Section */
 .jpwj {
-  margin-left: 4.5rem;
+  text-align: center;
 }
 
 .jpwj .jpwj-content {
@@ -438,7 +438,6 @@ body {
 }
 
 .jpwj .jpwj-img h1 {
-  text-align: center;
   color: var(--secondary);
 }
 
@@ -447,7 +446,7 @@ body {
 }
 
 .jpwj .jpwj-img img {
-  max-width: 850px;
+  max-width: 650px;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 1rem;
@@ -584,7 +583,7 @@ body {
     padding-top: 3rem;
   }
   .jpwj .jpwj-content .jpwj-img img {
-    max-width: 425px;
+    max-width: 400px;
   }
 }
 /* Tablet */
@@ -631,7 +630,7 @@ body {
     padding-top: 3rem;
   }
   .jpwj .jpwj-content .jpwj-img img {
-    max-width: 700px;
+    max-width: 600px;
   }
 }
 
@@ -683,7 +682,7 @@ body {
     padding-top: 3rem;
   }
   .jpwj .jpwj-content .jpwj-img img {
-    max-width: 425px;
+    max-width: 325px;
   }
 }
 
@@ -735,6 +734,7 @@ body {
     padding-top: 3rem;
   }
   .jpwj .jpwj-content .jpwj-img img {
-    max-width: 325px;
+    max-width: 225px;
+    border-radius: 20px;
   }
 }
