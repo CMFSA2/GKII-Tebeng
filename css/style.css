@@ -428,6 +428,31 @@ body {
   text-align: justify;
 }
 
+/* Jadwal Pelayanan & Warta Jemaat Section */
+.jpwj {
+  margin-left: 4.5rem;
+}
+
+.jpwj .jpwj-content {
+  display: flex;
+}
+
+.jpwj .jpwj-img h1 {
+  text-align: center;
+  color: var(--secondary);
+}
+
+.jpwj .jpwj-img {
+  flex: 1 1 1rem;
+}
+
+.jpwj .jpwj-img img {
+  max-width: 850px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  border-radius: 75px;
+}
 /* Media Queries */
 
 /* Laptop */
