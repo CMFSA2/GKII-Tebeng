@@ -334,6 +334,9 @@ body {
 .so {
   padding: 6rem 7% 1.4rem;
   color: #060270;
+  min-height: 100vh;
+  display: contents;
+  position: relative;
 }
 
 .so .so-gs {
@@ -431,7 +434,7 @@ body {
 /* Media Queries */
 
 /* Laptop */
-@media (max-width: 1366px) {
+@media (max-width: 1440px) {
   html {
     font-size: 75%;
   }
@@ -504,39 +507,50 @@ body {
   .so .rowgs .content p {
     font-size: 1.5rem;
   }
+
+  .so .so-gs {
+    height: 335px;
+  }
+
+  .so .so-km {
+    height: 730px;
+  }
+
+  .so .so-mpj {
+    height: 1075px;
+  }
+
+  .so .so-apmj {
+    height: 1450px;
+  }
+}
+
+.so .rowgs .so-img img {
+  margin-top: 2rem;
+  margin-left: 7rem;
+  padding-bottom: 1rem;
 }
 
 /* Tablet */
-@media (max-width: 758px) {
+@media (max-width: 768px) {
   html {
     font-size: 60%;
   }
 
-  .so {
-    height: 550px;
+  .so .so-gs {
+    height: 325px;
   }
 
-  .so .rowgs {
-    flex-wrap: wrap;
+  .so .so-km {
+    height: 675px;
   }
 
-  .so .rowgs .so-img img {
-    height: 24rem;
-    object-fit: cover;
-    margin-left: 0rem;
+  .so .so-mpj {
+    height: 1010px;
   }
 
-  .so .rowgs .content {
-    padding: 1;
-  }
-
-  .so .rowgs h3 {
-    margin-top: 1rem;
-    font-size: 2rem;
-  }
-
-  .so .rowgs .content p {
-    font-size: 1.5rem;
+  .so .so-apmj {
+    height: 1350px;
   }
 }
 
@@ -550,24 +564,19 @@ body {
     text-indent: 20px;
   }
 
-  .so {
-    height: 550px;
+  .so .so-gs {
+    height: 535px;
   }
 
-  .so .rowgs {
-    flex-wrap: wrap;
+  .so .so-km {
+    height: 1100px;
   }
 
-  .so .rowgs .content {
-    padding: 1;
+  .so .so-mpj {
+    height: 1650px;
   }
 
-  .so .rowgs h3 {
-    margin-top: 1rem;
-    font-size: 2rem;
-  }
-
-  .so .rowgs .content p {
-    font-size: 1.5rem;
+  .so .so-apmj {
+    height: 2200px;
   }
 }
