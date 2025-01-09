@@ -34,8 +34,9 @@
 
       <div class="navbar-nav">
         <a href="#home">Beranda</a>
-        <a href="#miscellanous">Aktivitas</a>
         <a href="#about">Tentang Kami</a>
+        <a href="#jpwj">Jadwal dan Warta</a>
+        <a href="#latest">Kegiatan Terbaru</a>
         <a href="#contact">Kontak</a>
       </div>
 
@@ -59,14 +60,24 @@
       </main>
     </section>
     <!-- Hero Section End-->
-
+    
+    <!-- Tabs Start-->
     <!-- About Section Start -->
+    <div class="container">
+      <div class="wrapper">
+        <ul class="indicator">
+          <li class="active" data-target="#tabsejarah"><i data-feather="book-open"></i>Sejarah</li>
+          <li data-target="#tabstrukturorganisasi"><i data-feather="users"></i>Struktur Organisasi</li>
+          <li data-target="minimize"><i data-feather="minimize-2"></i>Sembunyikan Tab</li>
+        </ul>
+    <div class="content">
     <div class="about" id="about">
+      <section id="tabsejarah" class="active">
       <div class="atitle">
-      <h1>Tentang <span>GKII</span></h1>
+        <h1>Sejarah <span>GKII</span></h1>
       </div>
       <div class="aimg">
-      <img src="img/header-bg.jpg" alt="ai">
+        <img src="img/header-bg.jpg" alt="ai">
       </div>
       <div class="acontent">
         <div class="apengantar">
@@ -100,10 +111,12 @@
         </div>
       </div>
     </div>
+      </section>
     <!-- About Section End -->
 
     <!-- Struktur Organisasi Section Start -->
-    <section id="so" class="so">
+    <section id="tabstrukturorganisasi">
+    <div class="so">
       <h2>Struktur <span>Organisasi</span></h2>
       <div class="soimg">
         <img src="img/struktur-organisasi.jpg" alt="Struktur Organisasi">
@@ -248,8 +261,15 @@
           </div>
         </div>
       </div>
+    </div>
+    </div>
+    </div>
     </section>
+    <div id="minimize" class="minimize">
+    </div>
+    </div>
     <!-- Struktur Organisasi Section End -->
+    <!-- Tabs End-->
 
     <!-- Jadwal Pelayanan & Warta Jemaat Section Start -->
     <section id="jpwj" class="jpwj">
@@ -264,11 +284,11 @@
           <a href="https://drive.google.com/file/d/1ZOfA8b8fbgZ9_zs2O1NWOHdQFKNlgm24/view?usp=drive_link">Download Warta</a>
         </div>
       </div>
-    </section>
+      </section>
     <!-- Jadwal Pelayanan & Warta Jemaat Section End -->
 
     <!-- Kegiatan Terbaru Start -->
-    <div class="kt-title">
+    <div id="latest" class="kt-title">
       <h1>Kegiatan Terbaru GKII Tebeng</h1>
     </div>
     <div class="slide-container swiper">
@@ -348,7 +368,7 @@
     <!-- Kegiatan Terbaru End -->
 
     <!-- Footer Start -->
-     <footer id="credit">
+     <footer id="contact">
       <div class="layanan-pengaduan">
         <h2><span>Layanan</span> Pengaduan</h2>
         <p>WhatsApp:... a.n ...</p>

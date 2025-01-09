@@ -39,6 +39,28 @@ document.addEventListener("click", function (e) {
   }
 });
 
+// Tab Sejarah dan Struktur Organisasi
+const allIndicator = document.querySelectorAll(".indicator li");
+const allContent = document.querySelectorAll(".content section");
+
+allIndicator.forEach((item) => {
+  item.addEventListener("click", function () {
+    const content = document.querySelector(this.dataset.target);
+
+    allIndicator.forEach((i) => {
+      i.classList.remove("active");
+    });
+
+    allContent.forEach((i) => {
+      i.classList.remove("active");
+    });
+
+    content.classList.add("active");
+    this.classList.add("active");
+  });
+});
+
+// Slider Kegiatan Terbaru
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 3,
   spaceBetween: 25,
