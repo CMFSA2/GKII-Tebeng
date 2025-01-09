@@ -45,7 +45,7 @@ var swiper = new Swiper(".slide-content", {
   loop: true,
   centerSlide: "true",
   fade: "true",
-  grabcursor: "true",
+  grabCursor: "true",
 
   // Pagination Bullets
   pagination: {
@@ -59,5 +59,19 @@ var swiper = new Swiper(".slide-content", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
     lockclass: "swiper-button-lock",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+
+    520: {
+      slidesPerView: 2,
+    },
+
+    950: {
+      slidesPerView: 3,
+    },
   },
 });
