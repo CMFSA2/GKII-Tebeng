@@ -23,7 +23,7 @@ html {
 body {
   font-family: "poppins" sans-serif;
   background-color: #fffdd7;
-  color: #fff;
+  color: transparent;
   min-height: 2000px;
 }
 
@@ -343,33 +343,6 @@ body {
   color: #060270;
 }
 
-.so .so-gs {
-  background-color: #e6e19b;
-  height: 475px;
-  border-radius: 30px;
-}
-
-.so .so-km {
-  margin-top: 1.5rem;
-  background-color: #ffb9b9;
-  height: 1025px;
-  border-radius: 30px;
-}
-
-.so .so-mpj {
-  margin-top: 1.5rem;
-  background-color: #cafdff;
-  height: 1410px;
-  border-radius: 30px;
-}
-
-.so .so-apmj {
-  margin-top: 1.5rem;
-  background-color: #c3ffc3;
-  height: 1750px;
-  border-radius: 30px;
-}
-
 .so .soimg {
   display: flex;
   justify-content: center;
@@ -391,48 +364,74 @@ body {
   color: var(--primary);
 }
 
-.so .rowgs {
+/* Profile So */
+.profile-pemimpin {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
 }
 
-.so .rowgs .so-img {
-  flex: 1 1 1rem;
+.profile-pemimpin .container p {
+  text-align: center;
+  margin: 30px 0 10px 0;
+  color: #800000;
+  letter-spacing: 2px;
+  font-weight: 400;
 }
 
-.so .rowgs .so-img img {
-  width: 70%;
-  scale: 90%;
-  margin-left: 3rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
-  border-radius: 300px;
+.profile-pemimpin .container h1,
+.departemen h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: var(--secondary);
 }
 
-.so .title h1 {
-  text-align: left;
-  font-size: 2rem;
-  padding-top: 1rem;
-  margin-bottom: 1rem;
-  padding-left: 2rem;
+.profile-pemimpin .container .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.so .content h3 {
-  font-size: 2rem;
-  padding-bottom: 1rem;
+.profile-pemimpin .container .wrapper .card {
+  background-color: #a344449c;
+  padding: 70px 50px 0 50px;
+  width: 400px;
+  height: 450px;
+  margin: 10px;
+  border-radius: 10px;
 }
 
-.so .rowgs .content {
-  flex: 1 1 35rem;
-  padding: 0 3rem;
+.profile-pemimpin .container .wrapper .card .profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
 }
 
-.so .rowgs .content p {
-  max-width: 1000px;
-  margin-bottom: 0.8rem;
-  font-size: 1.3rem;
-  font-weight: 300;
-  line-height: 1.6;
-  text-align: justify;
+.profile-pemimpin .container .wrapper .card .profile-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.profile-pemimpin .container .wrapper .card .content {
+  text-align: center;
+}
+
+.profile-pemimpin .container .wrapper .card .content h3 {
+  font-size: 1.4rem;
+  margin-top: 25px;
+  color: var(--secondary);
+}
+
+.profile-pemimpin .container .wrapper .card .content p {
+  color: var(--secondary);
+  letter-spacing: 1px;
+  margin: 0;
 }
 
 /* Jadwal Pelayanan & Warta Jemaat Section */
@@ -615,10 +614,11 @@ body {
   text-align: center;
   padding: 2rem;
 }
+
 /* Media Queries */
 
 /* Laptop */
-@media (max-width: 1366px) {
+@media (max-width: 1440px) {
   html {
     font-size: 75%;
   }
@@ -660,57 +660,84 @@ body {
     position: relative;
   }
 
-  .so .rowgs {
+  .profile-pemimpin .container .wrapper .card {
+    height: 400px;
+  }
+
+  .jpwj {
+    height: 550px;
+    min-height: 100vh;
+    display: contents;
+    position: relative;
+    text-align: center;
+  }
+
+  .jpwj .jpwj-content {
     flex-wrap: wrap;
   }
 
-  .so .rowgs .so-img img {
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
-    padding-right: 2rem;
+  .jpwj .jpwj-content h1 {
+    padding-top: 3rem;
+  }
+  .jpwj .jpwj-content .jpwj-img img {
+    max-width: 400px;
+  }
+}
+
+/* Laptop */
+@media (max-width: 1024px) {
+  html {
+    font-size: 75%;
   }
 
-  .so .rowgs .so-apmj img {
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
-    padding-right: 2rem;
+  #menu {
+    display: inline-block;
   }
 
-  .so .rowgs .content {
-    padding: 1;
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: rgba(255, 217, 0, 0.8);
+    width: 20rem;
+    height: 100vh;
+    transition: 0.3s;
   }
 
-  .so .rowgs h3 {
-    margin-top: 1rem;
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: #800000;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
     font-size: 2rem;
   }
 
-  .so .rowgs .content p {
-    font-size: 1.5rem;
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
   }
 
-  .so .so-gs {
-    height: 335px;
+  .so {
+    height: 550px;
+    min-height: 100vh;
+    display: contents;
+    position: relative;
   }
 
-  .so .so-km {
-    height: 730px;
+  .profile-pemimpin .container .wrapper .card {
+    height: 375px;
+    width: 300px;
   }
 
-  .so .so-mpj {
-    height: 1075px;
+  .profile-pemimpin .container .wrapper .card .content h3 {
+    font-size: 1.2rem;
   }
 
-  .so .so-apmj {
-    height: 1450px;
-  }
-
-  .so .rowgs .so-img img {
-    margin-top: 2rem;
-    margin-left: 7rem;
-    padding-bottom: 1rem;
+  .profile-pemimpin .container .wrapper .card .content p {
+    font-size: 0.75rem;
   }
 
   .jpwj {
@@ -744,20 +771,21 @@ body {
     position: relative;
   }
 
-  .so .so-gs {
-    height: 325px;
+  .profile-pemimpin .container .wrapper .card {
+    height: 200px;
+    width: 250px;
   }
 
-  .so .so-km {
-    height: 675px;
+  .profile-pemimpin .container .wrapper .card .content h3 {
+    font-size: 1.2rem;
   }
 
-  .so .so-mpj {
-    height: 1010px;
+  .profile-pemimpin .container .wrapper .card .content p {
+    font-size: 0.75rem;
   }
 
-  .so .so-apmj {
-    height: 1350px;
+  .profile-pemimpin .container .wrapper .card {
+    height: 400px;
   }
 
   .jpwj {
@@ -780,7 +808,7 @@ body {
   }
 }
 
-/* Mobile Phone */
+/* Mobile Phone 1 */
 @media (max-width: 450px) {
   html {
     font-size: 50%;
@@ -792,24 +820,21 @@ body {
     position: relative;
   }
 
+  .profile-pemimpin .container .wrapper .card {
+    height: 325px;
+    width: 250px;
+  }
+
+  .profile-pemimpin .container .wrapper .card .content h3 {
+    font-size: 1.2rem;
+  }
+
+  .profile-pemimpin .container .wrapper .card .content p {
+    font-size: 0.75rem;
+  }
+
   .apengantar p {
     text-indent: 20px;
-  }
-
-  .so .so-gs {
-    height: 535px;
-  }
-
-  .so .so-km {
-    height: 1100px;
-  }
-
-  .so .so-mpj {
-    height: 1650px;
-  }
-
-  .so .so-apmj {
-    height: 2200px;
   }
 
   .jpwj {
@@ -832,8 +857,8 @@ body {
   }
 }
 
-/* Mobile Phone Fold Etc. */
-@media (max-width: 344px) {
+/* Mobile Phone 2 */
+@media (max-width: 412px) {
   html {
     font-size: 50%;
   }
@@ -842,6 +867,101 @@ body {
     min-height: 100vh;
     display: contents;
     position: relative;
+  }
+
+  .so .soimg img {
+    width: 200px;
+  }
+
+  .profile-pemimpin .container .wrapper .card .profile-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .profile-pemimpin .container .wrapper .card .profile-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .profile-pemimpin .container .wrapper .card {
+    height: 20px;
+    width: 20px;
+  }
+
+  .profile-pemimpin .container .wrapper .card .content h3 {
+    font-size: 1.2rem;
+  }
+
+  .profile-pemimpin .container .wrapper .card .content p {
+    font-size: 0.75rem;
+  }
+
+  .apengantar p {
+    text-indent: 20px;
+  }
+
+  .jpwj {
+    height: 550px;
+    min-height: 100vh;
+    display: contents;
+    position: relative;
+    text-align: center;
+  }
+
+  .jpwj .jpwj-content {
+    flex-wrap: wrap;
+  }
+
+  .jpwj .jpwj-content h1 {
+    padding-top: 3rem;
+  }
+  .jpwj .jpwj-content .jpwj-img img {
+    max-width: 225px;
+    border-radius: 20px;
+  }
+}
+
+/* Mobile Phone 3 */
+@media (max-width: 344px) {
+  html {
+    font-size: 50%;
+  }
+
+  .container .wrapper ul li {
+    font-size: 1rem;
+  }
+
+  .so {
+    max-width: 70%;
+    display: contents;
+    position: relative;
+  }
+
+  .so .soimg img {
+    width: 100px;
+  }
+
+  .profile-pemimpin .container .wrapper .card .profile-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .profile-pemimpin .container .wrapper .card .profile-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .profile-pemimpin .container .wrapper .card {
+    height: 150px;
+    width: 150px;
+  }
+
+  .profile-pemimpin .container .wrapper .card .content h3 {
+    font-size: 1.2rem;
+  }
+
+  .profile-pemimpin .container .wrapper .card .content p {
+    font-size: 0.75rem;
   }
 
   .apengantar p {
@@ -882,5 +1002,62 @@ body {
   .jpwj .jpwj-content .jpwj-img img {
     max-width: 225px;
     border-radius: 20px;
+  }
+}
+
+/* Surface Duo */
+@media (max-width: 540px) {
+  html {
+    font-size: 50%;
+  }
+
+  .so {
+    min-height: 100vh;
+    display: contents;
+    position: relative;
+  }
+
+  .profile-pemimpin .container .wrapper .card {
+    height: 325px;
+    width: 250px;
+  }
+
+  .profile-pemimpin .container .wrapper .card .content h3 {
+    font-size: 1.2rem;
+  }
+
+  .profile-pemimpin .container .wrapper .card .content p {
+    font-size: 0.75rem;
+  }
+
+  .apengantar p {
+    text-indent: 20px;
+  }
+
+  .jpwj {
+    height: 550px;
+    min-height: 100vh;
+    display: contents;
+    position: relative;
+    text-align: center;
+  }
+
+  .jpwj .jpwj-content {
+    flex-wrap: wrap;
+  }
+
+  .jpwj .jpwj-content h1 {
+    padding-top: 3rem;
+  }
+  .jpwj .jpwj-content .jpwj-img img {
+    max-width: 425px;
+  }
+
+  .card .card-content h2 {
+    font-size: 1.25rem;
+  }
+
+  .card .card-content p {
+    font-size: 1rem;
   }
 }
